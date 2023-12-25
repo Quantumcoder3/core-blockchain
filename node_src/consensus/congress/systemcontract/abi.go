@@ -452,19 +452,6 @@ const ValidatorsInteractiveABI = `[
 	},
 	{
 		"inputs": [],
-		"name": "WithdrawProfitPeriod",
-		"outputs": [
-			{
-				"internalType": "uint64",
-				"name": "",
-				"type": "uint64"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [],
 		"name": "burnPartPercent",
 		"outputs": [
 			{
@@ -755,11 +742,6 @@ const ValidatorsInteractiveABI = `[
 				"type": "uint256"
 			},
 			{
-				"internalType": "uint256",
-				"name": "",
-				"type": "uint256"
-			},
-			{
 				"internalType": "address[]",
 				"name": "",
 				"type": "address[]"
@@ -797,7 +779,7 @@ const ValidatorsInteractiveABI = `[
 		],
 		"name": "initialize",
 		"outputs": [],
-		"stateMutability": "payable",
+		"stateMutability": "nonpayable",
 		"type": "function"
 	},
 	{
@@ -1036,19 +1018,6 @@ const ValidatorsInteractiveABI = `[
 	},
 	{
 		"inputs": [],
-		"name": "totalRewardOut",
-		"outputs": [
-			{
-				"internalType": "uint256",
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [],
 		"name": "totalStake",
 		"outputs": [
 			{
@@ -1248,10 +1217,6 @@ const ValidatorsInteractiveABI = `[
 		],
 		"stateMutability": "nonpayable",
 		"type": "function"
-	},
-	{
-		"stateMutability": "payable",
-		"type": "receive"
 	}
 ]`
 
@@ -1354,19 +1319,6 @@ const PunishInteractiveABI = `[
 				"internalType": "address",
 				"name": "",
 				"type": "address"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [],
-		"name": "WithdrawProfitPeriod",
-		"outputs": [
-			{
-				"internalType": "uint64",
-				"name": "",
-				"type": "uint64"
 			}
 		],
 		"stateMutability": "view",
@@ -1832,19 +1784,6 @@ const ProposalInteractiveABI = `[
 	},
 	{
 		"inputs": [],
-		"name": "WithdrawProfitPeriod",
-		"outputs": [
-			{
-				"internalType": "uint64",
-				"name": "",
-				"type": "uint64"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [],
 		"name": "burnPartPercent",
 		"outputs": [
 			{
@@ -1922,6 +1861,25 @@ const ProposalInteractiveABI = `[
 	{
 		"inputs": [],
 		"name": "initialized",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "lastProposalActive",
 		"outputs": [
 			{
 				"internalType": "bool",
